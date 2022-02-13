@@ -4,13 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
+    <title>Finance Ledger</title>
+    <script src="https://kit.fontawesome.com/2d547a4a7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/main.scss">
   </head>
-
+  <!-- assets/images/01-mob/01-hero/Rectangle.jpg -->
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
-    </article>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/example.html") %>
+    <header>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/00-header.html") %>
+    </header>
+    <main>
+      <section class="hero">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/01-hero.html") %>
+      </section>
+      <section class="about">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/02-about.html") %>
+      </section>
+      <section class="cases">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/03-cases.html") %>
+      </section>
+      <section class="blog">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/04-blog.html") %>
+      </section>
+      <section class="team">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/05-team.html") %>
+      </section>
+      <section class="callback">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/06-callback.html") %>
+      </section>
+    </main>
+    <footer>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.HTML_PATH + "/07-footer.html") %>
+    </footer>
   </body>
 </html>
